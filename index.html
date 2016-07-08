@@ -10,34 +10,39 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+	<link type="text/css" rel="stylesheet" href="css/custom.css" media="screen" title="no title" charset="utf-8" />
 </head>
 <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src = "https://code.jquery.com/jquery.js"></script>
 
-    <nav class="navbar navbar-inverse">
-    	<div class="container-fluid" style="background-color: black;">
+    <nav class="navbar navbar-inverse navbar-custom">
+    	<div class="container" id="header">
     		 <div class="navbar-header">
-			     <a class="navbar-brand" href="#" style="color: #FFFFFF">Start Bootstrap</a>
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+					 </button>
+			     <a class="navbar-brand" href="#">K. Siddarth</a>
 		    </div>
-			    <ul class="nav navbar-nav">
-			      <li><a href="#">About</a></li>
-			      <li><a href="#">Projects</a></li>
-			      <li><a href="#">Contact</a></li>
-			    </ul>
-	    	</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" class="active">Home</a></li>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">CV</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Me</a></li>
+					</ul>
+				</div>
+	    </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container">
 		<h1>Portfolio Item <small>Item Subheading</small></h1>
     </div>
 
     <hr>
 
-    <div class="container-fluid">
+    <div class="container">
     	<div class="row">
     		<div class="col-lg-8">
     			<img src="http://placehold.it/750x500" width="750px" height="500px">
@@ -67,25 +72,16 @@
     	</div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
 		<h2>Related Projects</h2>
+    </div>
 
 		<hr>
 
-    	<div class="row">
-    		<div class="col-lg-3">
-    			<img src="http://placehold.it/500x300" style="width=500px ; height=300px">
-    		</div>
-    		<div class="col-lg-3">
-    			<img src="http://placehold.it/500x300" style="width=500px ; height=300px">
-    		</div>
-    		<div class="col-lg-3">
-    			<img src="http://placehold.it/500x300" style="width=500px ; height=300px">
-    		</div>
-    		<div class="col-lg-3">
-    			<img src="http://placehold.it/500x300" style="width=500px ; height=300px">
-    		</div>
-    	</div>
-    </div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src = "https://code.jquery.com/jquery.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

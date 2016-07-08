@@ -1,0 +1,31 @@
+.navbar-custom {
+  background: #34495e;
+  background-image: transparent;
+  border-color: #0c4b33;
+}
+
+.navbar-custom .navbar-nav > li > a{
+  transition: background-color 0.3s ease;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus{
+  text-decoration: underline;
+  background-color: #4d6379;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #1abc9c;
+  border-radius: 10px;
+}
+
+.navbar-brand {
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
