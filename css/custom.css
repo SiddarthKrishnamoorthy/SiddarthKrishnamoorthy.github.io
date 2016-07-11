@@ -17,7 +17,7 @@
   border-radius: 10px;
 }
 
-.active {
+.active, .navbar-custom .navbar-nav > li > a.active:hover{
   background-color: #1abc9c;
   border-radius: 10px;
 }
