@@ -9,7 +9,8 @@ commit_files(){
     git checkout -b deployment
     mv public/* ../
     cd ../
-    rm sitemap
+    echo $(pwd)
+    rm sitemap.xml
     git commit -am "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
