@@ -13,6 +13,7 @@ script:
 deploy:
     provider: script
     skip_cleanup: true
+    local_dir: public
     script: deploy.sh
     on:
         branch: deployment
