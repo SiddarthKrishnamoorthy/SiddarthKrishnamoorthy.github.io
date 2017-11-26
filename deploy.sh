@@ -7,8 +7,9 @@ setup(){
 
 commit_files(){
     git checkout -b deployment
-    mv pages/* ../
+    mv public/* ../
     cd ../
+    rm sitemap
     git commit -am "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
