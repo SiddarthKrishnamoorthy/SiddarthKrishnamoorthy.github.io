@@ -7,8 +7,8 @@ setup(){
 
 commit_files(){
     git checkout -b deployment
-    mv pages/* ./
-    git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"
+    mv pages/* ../
+    git commit -am "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
 push_master(){
