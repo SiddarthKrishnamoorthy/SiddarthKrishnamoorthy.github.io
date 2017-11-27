@@ -12,6 +12,5 @@ before_script:
 
 script:
     - cd src/
-    - ./hugo --theme=academic
     - ../deploy.sh
 

@@ -8,6 +8,7 @@ setup(){
 }
 
 if [ $TRAVIS_BRANCH == "deployment" ]; then
+    ./hugo --theme=academic
     setup
     cp -r public/ ../
     cd ../
