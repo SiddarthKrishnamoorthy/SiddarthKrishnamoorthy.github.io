@@ -12,7 +12,6 @@ before_script:
 
 script:
     - cd src/
-    - rm -rf public || exit 0
     - ./hugo --theme=academic
 
 deploy:
