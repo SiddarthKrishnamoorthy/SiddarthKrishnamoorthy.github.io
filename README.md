@@ -1,2 +1,2 @@
 # SiddarthKrishnamoorthy.github.io
-Test Bootstrap Site
+Hugo Academic theme
