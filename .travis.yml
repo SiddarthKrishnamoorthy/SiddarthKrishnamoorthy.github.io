@@ -12,5 +12,15 @@ before_script:
 
 script:
     - cd src/
-    - ../deploy.sh
+    - ./hugo --theme=academic
 
+before_deploy:
+    - chmod +x ./deploy.sh
+
+deploy:
+    provider: script
+    skip_cleanup: true
+    script: ./deploy.sh
+    github_token: $GITHUB_TOKEN
+    on:
+        branch: deployment
