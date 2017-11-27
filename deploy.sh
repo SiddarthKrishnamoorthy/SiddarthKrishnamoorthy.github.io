@@ -10,6 +10,6 @@ setup(){
 setup
 cp -r public/* ../
 cd ../
-git add --all *
+git add --all public/
 git commit -m "TRAVIS BUILD = $TRAVIS_BUILD_NUMBER"
 git push -f -q https://$GITHUB_TOKEN@github.com/SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io master &2>/dev/null
