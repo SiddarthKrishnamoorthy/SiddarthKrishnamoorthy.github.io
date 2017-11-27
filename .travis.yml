@@ -28,4 +28,4 @@ after_deploy:
     - curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
     - git checkout gh-pages
     - chmod a+x /tmp/travis-automerge
-    - BRANCHES_TO_MERGE_REGEX='^gh-pages$' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io /tmp/travis-automerge
+    - BRANCHES_TO_MERGE_REGEX='^gh-pages$' BRANCH_TO_MERGE_INTO=master GITHUB_SECRET_TOKEN=$GITHUB_TOKEN GITHUB_REPO=SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io /tmp/travis-automerge"
