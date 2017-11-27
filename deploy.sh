@@ -8,7 +8,7 @@ setup(){
 }
 
 setup
-cp -r public/* ../
+cp -r public/ ../
 cd ../
 git add --all public/
 git commit -m "TRAVIS BUILD = $TRAVIS_BUILD_NUMBER"
