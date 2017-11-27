@@ -6,14 +6,12 @@ addons:
 install:
     - rm -rf public || exit 0
 
+before_script:
+    - chmod +x ./deploy.sh
+    - chmod +x src/hugo
+
 script:
     - cd src/
     - ./hugo --theme=academic
+    - ../deploy.sh
 
-deploy:
-    provider: script
-    skip_cleanup: true
-    local_dir: public
-    script: deploy.sh
-    on:
-        branch: deployment
