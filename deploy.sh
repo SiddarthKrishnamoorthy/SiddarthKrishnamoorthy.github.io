@@ -12,4 +12,4 @@ cp -r public/ ../
 cd ../
 git add --all public/
 git commit -m "TRAVIS BUILD = $TRAVIS_BUILD_NUMBER"
-git push -f -q --force https://$GITHUB_TOKEN@github.com/SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io.git master
+git push -f -q --force https://$GITHUB_TOKEN@github.com/SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io master
