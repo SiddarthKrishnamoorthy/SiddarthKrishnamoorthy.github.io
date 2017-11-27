@@ -7,9 +7,11 @@ setup(){
     git config --global user.name "Travis CI"
 }
 
-setup
-cp -r public/ ../
-cd ../
-git add --all public/
-git commit -m "TRAVIS BUILD = $TRAVIS_BUILD_NUMBER"
-git push -f -q --force https://$GITHUB_TOKEN@github.com/SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io deployment:master
+if [ $TRAVIS_BRANCH == "deployment" ]; then
+    setup
+    cp -r public/ ../
+    cd ../
+    git add public/
+    git commit -m "TRAVIS BUILD = $TRAVIS_BUILD_NUMBER"
+    git push -f -q --force https://$GITHUB_TOKEN@github.com/SiddarthKrishnamoorthy/SiddarthKrishnamoorthy.github.io deployment:master
+fi
