@@ -15,7 +15,7 @@ script:
     - ./hugo --theme=academic
 
 before_deploy:
-    - chmod +x ./deploy.sh
+    - cd ../
 
 deploy:
     provider: script
